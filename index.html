@@ -1,9 +1,143 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>
-        This is my assignment two
-    </title>
-    <h1>
-        Submission to assignment 2
-    </h1>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+    Assignment Solution for Module 2
+</title>
+<style>   
+    
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Arial';
+}
+
+h1 {
+    text-align: center;
+    }
+
+p {
+  color: black;
+  margin-top: 30px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.boxes {
+  border: 1px solid black;
+  background-color: #808080;
+  height: 150px;
+  margin: 5px;
+  position: relative;
+}
+
+
+#chicken {
+  background-color:#dd8cc2;
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border:3px solid black;
+}
+
+#beef {
+  background-color: #920e0e;
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border:3px solid black;
+}
+
+#sushi {
+  background-color: #bbbd66;
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border:3px solid black;
+}
+
+/* For large device */
+@media (min-width: 992px) {
+  .col-lg-3{
+    float: left;
+    border: 1px;
+  }
+  .col-lg-3 {
+    width: 33.3%;
+  }
+}
+
+/* For medium device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1,.col-md-2 {
+    float: left;
+    border: 1px;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2{
+    width: 100%;
+  }
+}
+
+/* For small device */
+@media (max-width: 767px) {
+  .col-sm-1{
+    float: left;
+    border: 1px;
+  }
+  .col-sm-1 {
+    width: 100%;
+  }
+}
+
+
+</style>
 </head>
+
+  <body>
+    <h1>
+        Our Products
+    </h1>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-1 col-sm-1">
+            <div class = "boxes">
+                <div id="chicken">
+                    <h3>Chicken</h3>
+                </div>
+                <p>
+                    A CubeSat (U-class spacecraft)[1] is a type of miniaturized satellite for space research that is made up of multiple cubic modules 10 cm (3.9 in) per side.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-1 col-sm-1">
+            <div class = "boxes">
+                <div id="beef">
+                     <h3>Beef</h3>
+                </div>
+                <p>A medium Earth orbit (MEO) is an Earth-centred orbit with an altitude above a low Earth orbit (LEO) and below a high Earth orbit (HEO) – between 2,000 and 35,786 km (1,243 and 22,236 mi) above sea level.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-1">
+            <div class = "boxes">
+                <div id="sushi">
+                     <h3>Sushi</h3>
+                </div>
+                <p>A high Earth orbit is a geocentric orbit with an altitude entirely above that of a geosynchronous orbit (35,786 kilometres, 22,236 mi).
+                </p>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>>
